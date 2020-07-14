@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class FizzBizz {
     public static void main(String[] args) {
+        // buzzzzzzzzzzzzzzzz
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Number: ");

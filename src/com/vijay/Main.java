@@ -9,6 +9,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+        // check check
 
         String[] fruits = {"Apple", "Mango", "Orange"};
 
