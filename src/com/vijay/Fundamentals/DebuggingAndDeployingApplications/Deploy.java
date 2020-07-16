@@ -1,4 +1,4 @@
-package com.vijay.DebuggingAndDeployingApplications;
+package com.vijay.Fundamentals.DebuggingAndDeployingApplications;
 
 public class Deploy {
     public static void main(String[] args) {

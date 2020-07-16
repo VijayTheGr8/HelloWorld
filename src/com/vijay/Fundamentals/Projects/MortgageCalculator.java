@@ -1,4 +1,4 @@
-package com.vijay.Projects;
+package com.vijay.Fundamentals.Projects;
 
 import java.text.NumberFormat;
 import java.util.Scanner;
