@@ -1,4 +1,4 @@
-package com.vijay.OOP.Encapsulation;
+package com.vijay.OOP.Classes.Encapsulation;
 
 public class Employee {
     private int baseSalary;

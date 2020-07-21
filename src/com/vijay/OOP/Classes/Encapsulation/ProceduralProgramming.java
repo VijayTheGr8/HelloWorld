@@ -1,4 +1,4 @@
-package com.vijay.OOP.Encapsulation;
+package com.vijay.OOP.Classes.Encapsulation;
 
 // bloated and hard to edit without creating bugs in code
 // THIS IS NOT OOP!!!

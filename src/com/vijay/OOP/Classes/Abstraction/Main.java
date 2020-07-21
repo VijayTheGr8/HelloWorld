@@ -1,4 +1,4 @@
-package com.vijay.OOP.Abstraction;
+package com.vijay.OOP.Classes.Abstraction;
 
 public class Main {
     public static void main(String[] args) {

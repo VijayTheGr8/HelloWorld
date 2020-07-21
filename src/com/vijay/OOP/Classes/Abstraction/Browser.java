@@ -1,4 +1,4 @@
-package com.vijay.OOP.Abstraction;
+package com.vijay.OOP.Classes.Abstraction;
 
 public class Browser {
     public void navigate(String address) {
