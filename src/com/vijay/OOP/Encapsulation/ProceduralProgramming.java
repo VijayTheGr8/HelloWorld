@@ -1,8 +1,8 @@
-package com.vijay.OOP.Classes;
+package com.vijay.OOP.Encapsulation;
 
-import org.w3c.dom.Text;
-
-public class Main {
+// bloated and hard to edit without creating bugs in code
+// THIS IS NOT OOP!!!
+public class ProceduralProgramming {
     public static void main(String[] args) {
         int baseSalary = 50_000;
         int extraHours = 10;
