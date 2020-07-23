@@ -1,4 +1,4 @@
-package com.vijay.OOP.Inheritance;
+package com.vijay.OOP.Concepts;
 
 import java.util.Objects;
 

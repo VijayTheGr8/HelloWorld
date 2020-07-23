@@ -1,11 +1,11 @@
-package com.vijay.OOP.Inheritance;
+package com.vijay.OOP.Concepts;
 
 public class TextBox extends UIControl {
     public String text = "";
 
-    public TextBox() {
-        super(true);
-        //System.out.println("Textbox");
+    @Override
+    public void render() {
+        System.out.println("Render TextBox");
     }
 
     @Override
