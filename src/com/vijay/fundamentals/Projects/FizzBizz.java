@@ -1,4 +1,4 @@
-package com.vijay.Fundamentals.Projects;
+package com.vijay.fundamentals.Projects;
 
 import java.util.Scanner;
 

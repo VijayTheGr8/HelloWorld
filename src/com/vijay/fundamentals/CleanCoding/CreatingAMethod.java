@@ -1,4 +1,4 @@
-package com.vijay.Fundamentals.CleanCoding;
+package com.vijay.fundamentals.CleanCoding;
 
 public class CreatingAMethod {
     public static void main(String[] args) {

@@ -1,7 +1,7 @@
-package com.vijay.AdvancedTopics.Exceptions;
+package com.vijay.advancedTopics.generics;
 
 public class Main {
     public static void main(String[] args) {
-        Demo.show();
+
     }
 }
