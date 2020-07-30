@@ -1,20 +1,14 @@
 package com.vijay.advancedTopics.lambdaAndFunctionalInterfaces;
 
+import java.util.function.BinaryOperator;
 import java.util.function.Function;
+import java.util.function.Predicate;
 
 public class LambdasDemo {
     public static void show() {
 
-        Function<String, String> replaceColon = str -> str.replace(":", "=");
-        Function<String, String> addBraces = str -> "{" + str + "}";
+        BinaryOperator<Integer> add = (a, b) -> a + b;
 
-        var result = replaceColon
-                      .andThen(addBraces)
-                      .apply("key:value");
-
-        addBraces.compose(replaceColon).apply("key:value");
-
-        System.out.println(result);
 
    }
 }
