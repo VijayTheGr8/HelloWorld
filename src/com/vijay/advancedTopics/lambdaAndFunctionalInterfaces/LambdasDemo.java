@@ -1,20 +1,16 @@
 package com.vijay.advancedTopics.lambdaAndFunctionalInterfaces;
 
+import java.util.function.BinaryOperator;
 import java.util.function.Function;
+import java.util.function.UnaryOperator;
 
 public class LambdasDemo {
     public static void show() {
 
-        Function<String, String> replaceColon = str -> str.replace(":", "=");
-        Function<String, String> addBraces = str -> "{" + str + "}";
+        UnaryOperator<Integer> square = n -> n * n;
+        UnaryOperator<Integer> increment = n -> n + 1;
 
-        var result = replaceColon
-                      .andThen(addBraces)
-                      .apply("key:value");
-
-        addBraces.compose(replaceColon).apply("key:value");
-
-        System.out.println(result);
+        System.out.println(increment.andThen(square).apply(1));
 
    }
 }
