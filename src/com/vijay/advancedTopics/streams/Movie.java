@@ -12,4 +12,16 @@ public class Movie {
     public int getLikes() {
         return likes;
     }
+
+    @Override
+    public String toString() {
+        return "Movie{" +
+                "title='" + title + '\'' +
+                ", likes=" + likes +
+                '}';
+    }
+
+    public String getTitle() {
+        return title;
+    }
 }
