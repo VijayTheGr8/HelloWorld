@@ -1,7 +1,5 @@
 package com.vijay.advancedTopics.lambdaAndFunctionalInterfaces;
 
-import java.util.function.BinaryOperator;
-import java.util.function.Function;
 import java.util.function.UnaryOperator;
 
 public class LambdasDemo {
