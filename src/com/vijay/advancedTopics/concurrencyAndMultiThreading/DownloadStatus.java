@@ -1,33 +1,15 @@
 package com.vijay.advancedTopics.concurrencyAndMultiThreading;
 
+import java.util.concurrent.atomic.LongAdder;
+
 public class DownloadStatus {
-    private volatile boolean isDone;
-    private int totalBytes;
-    private int totalFiles;
-    private Object totalBytesLock = new Object();
-    private Object totalFilesLock = new Object();
+    private LongAdder totalBytes = new LongAdder();
 
     public int getTotalBytes() {
-        return totalBytes;
+        return totalBytes.intValue();
     }
 
-    public synchronized void incrementTotalBytes() {
-            totalBytes++;
-    }
-
-    public synchronized void incrementTotalFiles() {
-            totalFiles++;
-    }
-
-    public int getTotalFiles() {
-        return totalFiles;
-    }
-
-    public boolean isDone() {
-        return isDone;
-    }
-
-    public void done() {
-        isDone = true;
+    public void incrementTotalBytes() {
+            totalBytes.increment();
     }
 }
