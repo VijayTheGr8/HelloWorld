@@ -1,28 +1,19 @@
 package com.vijay.advancedTopics.executive;
 
+import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
-import java.util.concurrent.Executors;
+import java.util.function.Supplier;
 
 public class ExecutiveDemo {
     public static void show() {
-        var executor = Executors.newFixedThreadPool(2);
-
+        Supplier<Integer> task = () -> 1;
+        var future = CompletableFuture.
+                supplyAsync(task);
         try {
-            var future = executor.submit(() -> {
-                LongTask.simulate();
-                return 1;
-            });
-
-            System.out.println("Do more work");
-            try {
-                var result = future.get();
-                System.out.println(result);
-            } catch (InterruptedException | ExecutionException e) {
-                e.printStackTrace();
-            }
-        }
-        finally {
-            executor.shutdown();
+            var result = future.get();
+            System.out.println(result);
+        } catch (InterruptedException | ExecutionException e) {
+            e.printStackTrace();
         }
     }
 }
